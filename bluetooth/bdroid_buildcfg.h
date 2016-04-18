@@ -17,6 +17,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME "Samsung Galaxy Tab S2"
+#define BTM_DEF_LOCAL_NAME DVC_NAME
 
 #endif

@@ -12,16 +12,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH = device/samsung/gts2-common
 
-ifeq ($(BOARD_VENDOR),samsung)
-ifeq ($(TARGET_BOARD_PLATFORM),universal5433)
+ifeq ($(filter-out gts28wifi gts10wifi,$(TARGET_DEVICE)),)
 
-ifneq ($(filter gts28wifi gts210wifi,$(TARGET_DEVICE)),)
+$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/net/wireless/bcmdhd4358)
+$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/sensorhub/brcm/factory)
+$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/media/platform/exynos/fimc-is/sensor)
+$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/security/tima_uevent)
+
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
+
 endif
-
-include $(CLEAR_VARS)
-
