@@ -16,14 +16,10 @@
 
 ifeq ($(TARGET_DEVICE), gts28wifi)
 
-LOCAL_CFLAGS += -DVC_NAME="Samsung Galaxy Tab S2 8.0"
+LOCAL_CFLAGS += -DTRGT_BT_NAME_GTS28WIFI
 
 else ifeq ($(TARGET_DEVICE), gts10wifi)
 
-LOCAL_CFLAGS += -DVC_NAME="Samsung Galaxy Tab S2 10.0"
-
-else
-
-LOCAL_CFLAGS += -DVC_NAME="Samsung Galaxy Tab S2"
+LOCAL_CFLAGS += -DTRGT_BT_NAME_GTS210WIFI
 
 endif

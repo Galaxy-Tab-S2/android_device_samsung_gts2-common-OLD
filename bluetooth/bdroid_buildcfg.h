@@ -17,6 +17,18 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME DVC_NAME
+#ifdef TRGT_BT_NAME_GTS28WIFI
 
+	#define BTM_DEF_LOCAL_NAME "Samsung Galaxy Tab S2 8.0"
+
+#elif TRGT_BT_NAME_GTS210WIFI
+
+	#define BTM_DEF_LOCAL_NAME "Samsung Galaxy Tab S2 10.0"
+
+#else
+
+	#define BTM_DEF_LOCAL_NAME "Samsung Galaxy Tab S2 Exynos 5433"
+
+#endif
+ 
 #endif
