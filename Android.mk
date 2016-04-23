@@ -17,11 +17,6 @@ LOCAL_PATH = device/samsung/gts2-common
 
 ifeq ($(filter-out gts28wifi gts10wifi,$(TARGET_DEVICE)),)
 
-$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/net/wireless/bcmdhd4358)
-$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/sensorhub/brcm/factory)
-$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/drivers/media/platform/exynos/fimc-is/sensor)
-$(shell mkdir -p out/target/product/$(TARGET_DEVICE)/obj/KERNEL_OBJ/security/tima_uevent)
-
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 endif
