@@ -135,13 +135,11 @@ const struct route_config media_bt_sco_headset_out = {
 };
 
 const struct route_config camcorder_speaker = {
-    "media-speaker",
-    "media-second-mic"
+    "camcorder-mic"
 };
 
 const struct route_config camcorder_headphones = {
-    "media-headphones",
-    "media-second-mic"
+    "camcorder-mic"
 };
 
 const struct route_config voice_rec_speaker = {
