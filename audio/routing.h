@@ -111,12 +111,12 @@ const struct route_config voice_bt_sco_headset_out_wb = {
 
 const struct route_config media_speaker = {
     "media-speaker",
-    "media-main-mic"
+    "media-mic"
 };
 
 const struct route_config media_earpiece = {
     "media-earpiece",
-    "media-main-mic"
+    "media-mic"
 };
 
 const struct route_config media_headset = {
